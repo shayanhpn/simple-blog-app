@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "IranSansX";
+    src: url("../fonts/IRANSansXFaNum-Regular.woff2");
+}
+@font-face {
+    font-family: "IranSansXBold";
+    src: url("../fonts/IRANSansXFaNum-Bold.woff2");
+}
+*{
+    font-family: "IranSansX";
+}
+.navbar-brand{
+    font-family: "IranSansXBold";
+}
+
+.bg-blue{
+    background-color: #4385F5;
+    color: white !important;
+}
+
