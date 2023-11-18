@@ -18,3 +18,19 @@
     color: white !important;
 }
 
+a{
+    text-decoration: none;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-primary
+{
+   color: white;
+    background-color: #29ADB2;
+    border-color: #29ADB2;
+}

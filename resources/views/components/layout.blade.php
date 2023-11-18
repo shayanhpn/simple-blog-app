@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-light">
     <div class="container p-4">
         {{$slot}}
     </div>
