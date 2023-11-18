@@ -8,3 +8,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[MainPageController::class,'showMainPage']);
 Route::get('/register',[RegisterUserController::class,'showRegisterUser']);
 Route::get('/login',[LoginUserController::class,'showLogin']);
+
+Route::post('/register',[RegisterUserController::class,'registerUser'])->name('register');

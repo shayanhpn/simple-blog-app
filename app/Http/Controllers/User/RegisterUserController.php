@@ -20,8 +20,17 @@ class RegisterUserController extends Controller
             'lastname' => ['required'],
             'email' => ['email','required','unique:users'],
             'password' => ['required','confirmed']
-        ]);
+        ],[
+            'firstname.required' => 'وارد کردن نام الزامی است',
+            'lastname.required' => 'وارد کردن نام خانوادگی الزامی است',
+            'email.required' => 'وارد کردن ایمیل الزامی است',
+            'email.email' => 'لطفا ایمیل معتبر وارد کنید',
+            'email.unique' => 'این ایمیل قبلا انتخاب شده است',
+            'password.required' => 'وارد کردن کلمه عبور الزامی است',
+            'password.confirmed' => 'کلمه عبور یکسان نیست'
+       ]);
        User::create($registerFields);
+       return back()->with('success','ثبت نام شما با موفقیت صورت گرفت');
 
     }
 }
