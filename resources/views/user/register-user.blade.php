@@ -24,7 +24,7 @@
                 <button class="btn btn-primary form-control mt-3">ثبت نام</button>
             </div>
             <hr>
-            <span class="text-secondary"><i class="fa-solid fa-user"></i> حساب کاربری دارید؟ <a href="">از اینجا وارد شوید</a></span>
+            <span class="text-secondary"><i class="fa-solid fa-user"></i> حساب کاربری دارید؟ <a href="{{route('login')}}">از اینجا وارد شوید</a></span>
         </form>
     </div>
 </div>
