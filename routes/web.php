@@ -10,3 +10,4 @@ Route::get('/register',[RegisterUserController::class,'showRegisterUser']);
 Route::get('/login',[LoginUserController::class,'showLogin']);
 
 Route::post('/register',[RegisterUserController::class,'registerUser'])->name('register');
+Route::post('/login',[LoginUserController::class,'loginUser'])->name('login');

@@ -20,5 +20,6 @@
                 </li>
             </ul>
         </div>
+        <a class="nav-link mx-4 py-2 px-3 rounded register-navbar-button" href="{{route('register')}}">ثبت نام</a>
     </div>
 </nav>

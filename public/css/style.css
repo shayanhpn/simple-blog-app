@@ -34,3 +34,21 @@ input{
     background-color: #29ADB2;
     border-color: #29ADB2;
 }
+
+.alert-green{
+    background-color: #007E33;
+    color: white;
+}
+
+.alert-danger{
+    background-color: #CC0000;
+    color: white;
+}
+.register-navbar-button{
+    background-color: #E06469;
+    color: white;
+
+}
+.register-navbar-button:hover{
+    background-color: #001B79;
+}

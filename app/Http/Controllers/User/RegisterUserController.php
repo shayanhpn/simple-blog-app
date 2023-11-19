@@ -30,7 +30,7 @@ class RegisterUserController extends Controller
             'password.confirmed' => 'کلمه عبور یکسان نیست'
        ]);
        User::create($registerFields);
-       return back()->with('success','ثبت نام شما با موفقیت صورت گرفت');
+       return redirect('/')->with('success','ثبت نام شما با موفقیت صورت گرفت');
 
     }
 }

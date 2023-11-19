@@ -7,9 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script src="https://kit.fontawesome.com/add5785b56.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body class="bg-light">
+@if(session('success'))
+    <div class="col-md-2 mx-4 my-4">
+        <div class="alert alert-green" role="alert">
+            <i class="fa-regular fa-square-check"></i> {{session('success')}}
+        </div>
+    </div>
+@elseif(session('danger'))
+    <div class="col-md-3 mx-4 my-4">
+            <div class="alert alert-danger" role="alert">
+                <i class="fa-solid fa-circle-exclamation fa-shake"></i> {{session('danger')}}
+            </div>
+    </div>
+@endif
     <div class="container p-4">
         {{$slot}}
     </div>
