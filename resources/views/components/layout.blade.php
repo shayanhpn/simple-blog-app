@@ -12,13 +12,13 @@
 </head>
 <body class="bg-light">
 @if(session('success'))
-    <div class="col-md-2 mx-4 my-4">
+    <div class="col-md-3 mx-4 my-4 position-absolute z-3">
         <div class="alert alert-green" role="alert">
             <i class="fa-regular fa-square-check"></i> {{session('success')}}
         </div>
     </div>
 @elseif(session('danger'))
-    <div class="col-md-3 mx-4 my-4">
+    <div class="col-md-3 mx-4 my-4 position-absolute z-3">
             <div class="alert alert-danger" role="alert">
                 <i class="fa-solid fa-circle-exclamation fa-shake"></i> {{session('danger')}}
             </div>
@@ -29,6 +29,7 @@
     </div>
 
     <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
+    <script src="{{asset('js/jquery-3.7.1.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>
