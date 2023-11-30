@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\MainPageController;
+use App\Http\Controllers\User\AccountController;
+use App\Http\Controllers\User\EditUserController;
 use App\Http\Controllers\User\LoginUserController;
 use App\Http\Controllers\User\LogoutUserController;
 use App\Http\Controllers\User\RegisterUserController;
@@ -15,3 +17,8 @@ Route::post('/login',[LoginUserController::class,'loginUser'])->name('login');
 
 Route::get('/logout',[LogoutUserController::class,'showLogoutUser']);
 Route::post('/logout',[LogoutUserController::class,'logoutUser']);
+
+
+Route::get('/my-account',[AccountController::class,'showMyAccount']);
+
+Route::get('/edit-profile/{id}',[EditUserController::class,'showEditUser']);

@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
-    //
+    public function showMyAccount()
+    {
+        return view('user.myaccount');
+    }
+
 }
