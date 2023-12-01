@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Blog\CreatePostController;
 use App\Http\Controllers\MainPageController;
 use App\Http\Controllers\User\AccountController;
 use App\Http\Controllers\User\EditUserController;
@@ -21,4 +22,7 @@ Route::post('/logout',[LogoutUserController::class,'logoutUser']);
 
 Route::get('/my-account',[AccountController::class,'showMyAccount']);
 
-Route::get('/edit-profile/{id}',[EditUserController::class,'showEditUser']);
+Route::get('/edit-profile/{id}',[EditUserController::class,'showEditUser'])->name('edit-profile');
+Route::put('/edit-profile/{user}',[EditUserController::class,'editUser'])->name('edit-user');
+
+Route::get('/create-post',[CreatePostController::class,'showCreatePost']);

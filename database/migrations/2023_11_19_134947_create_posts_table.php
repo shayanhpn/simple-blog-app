@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->foreignUuid('user_id')->references('id')->on('users');
             $table->string('title');
-            $table->text('body');
-            $table->string('post_image');
-            $table->string('tags');
-            $table->string('category');
+            $table->text('body')->nullable();
+            $table->string('post_image')->nullable();
+            $table->string('tags')->nullable();
+            $table->string('category')->default('دسته بندی نشده');
             $table->timestamps();
         });
     }

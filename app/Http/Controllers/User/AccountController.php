@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
+    // Show My Account Page
     public function showMyAccount()
     {
-        return view('user.myaccount');
+        if(auth()->check())
+        {
+            return view('user.myaccount');
+        }
+        return back()->with('danger','ابتدا وارد شوید');
     }
 
 }

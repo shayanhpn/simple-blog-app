@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class LogoutUserController extends Controller
 {
+    // Show Accept Logout Page
     public function showLogoutUser()
     {
         if(auth()->check())

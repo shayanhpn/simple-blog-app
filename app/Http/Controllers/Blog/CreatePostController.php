@@ -7,5 +7,13 @@ use Illuminate\Http\Request;
 
 class CreatePostController extends Controller
 {
-    //
+    public function showCreatePost()
+    {
+        return view('blog.create-post');
+    }
+
+    public function createPost()
+    {
+
+    }
 }

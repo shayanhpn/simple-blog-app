@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 
 class LoginUserController extends Controller
 {
+    // Show Login User Page
     public function showLogin()
     {
         return view('user.login-user');
     }
 
+    // Login User Function
     public function loginUser(Request $request)
     {
         $loginFields = $request->validate([
