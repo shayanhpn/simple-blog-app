@@ -13,7 +13,7 @@
             <h6 class="text-secondary">تاریخ عضویت: <span>{{auth()->user()->created_at}}</span></h6>
             <hr>
                 <a type="button" href="{{route('edit-profile',auth()->user()->id)}}" class="btn btn-primary w-100">ویرایش اطلاعات</a>
-                <a type="button" href="" class="btn btn-danger w-100 mt-3">حذف حساب کاربری</a>
+                <a type="button" href="{{route('show.delete-user',auth()->user()->id)}}" class="btn btn-danger w-100 mt-3">حذف حساب کاربری</a>
         </div>
     </div>
 </div>

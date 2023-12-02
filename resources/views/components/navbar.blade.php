@@ -20,6 +20,18 @@
                 </li>
             </ul>
         </div>
+        @if(auth()->check())
+            <div class="dropdown">
+                <button class="btn btn-primary text-white mx-4 py-2 px-3" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-user"></i> حساب کاربری <i class="fa-solid fa-caret-down"></i> </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{{route('my-account')}}">حساب من</a></li>
+                    <li><a class="dropdown-item" href="#">نوشته ها من</a></li>
+                    <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                </ul>
+            </div>
+
+        @else
         <a class="nav-link mx-4 py-2 px-3 rounded register-navbar-button" href="{{route('register')}}">ثبت نام</a>
+        @endif
     </div>
 </nav>
