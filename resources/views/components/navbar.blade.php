@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">صفحه اصلی</a>
+                    <a class="nav-link active text-white" aria-current="page" href="{{route('main')}}">صفحه اصلی</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">وبلاگ</a>
@@ -18,6 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">تماس با ما</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{route('show.create-post')}}">ارسال نوشته</a>
+                </li>
             </ul>
         </div>
         @if(auth()->check())
@@ -26,7 +29,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{route('my-account')}}">حساب من</a></li>
                     <li><a class="dropdown-item" href="#">نوشته ها من</a></li>
-                    <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                    <li><a class="dropdown-item text-danger" id="logout" href="#">خروج</a></li>
                 </ul>
             </div>
 

@@ -26,8 +26,9 @@ Route::get('/my-account',[AccountController::class,'showMyAccount'])->name('my-a
 Route::get('/edit-profile/{id}',[EditUserController::class,'showEditUser'])->name('edit-profile');
 Route::put('/edit-profile/{user}',[EditUserController::class,'editUser'])->name('edit-user');
 
-Route::get('/create-post',[CreatePostController::class,'showCreatePost']);
-
+Route::get('/create-post',[CreatePostController::class,'showCreatePost'])->name('show.create-post');
+Route::post('/create-post',[CreatePostController::class,'createPost'])->name('create-post');
 
 Route::get('/delete-profile/{id}',[DeleteUserController::class,'showDeleteUser'])->name('show.delete-user');
 Route::delete('/delete-profile/{user}',[DeleteUserController::class,'deleteUser'])->name('delete-user');
+

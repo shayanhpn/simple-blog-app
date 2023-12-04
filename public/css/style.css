@@ -52,3 +52,9 @@ input{
 .register-navbar-button:hover{
     background-color: #001B79;
 }
+.swal2-popup{
+    height: 300px;
+}
+textarea{
+    resize: none;
+}

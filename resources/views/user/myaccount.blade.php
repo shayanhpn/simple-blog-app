@@ -38,7 +38,7 @@
             <div class="card-body">
                 <h5 class="card-title text-center fw-bold">تنظیمات حساب کاربری</h5>
                 <hr>
-                <a href="#">شما با نام {{auth()->user()->firstname}} وارد شده اید، آیا میخواهید خارج شوید؟</a>
+                <a href="#">شما با نام {{auth()->user()->firstname}} وارد شده اید</a>
             </div>
         </div>
     </div>
