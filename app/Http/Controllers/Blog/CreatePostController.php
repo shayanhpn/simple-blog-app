@@ -21,10 +21,13 @@ class CreatePostController extends Controller
     {
         $postFields = $request->validate([
             'title' => ['required'],
-            'body' => ['required'],
+            'body' => [],
             'post_image' => ['required'],
             'tags' => ['required'],
             'category' => ['required']
+        ],[
+            'title.required' => 'لطفا عنوان را وارد کنید',
+            'body.required' => 'لطفا'
         ]);
         Post::create($postFields);
         return back()->with('success','نوشته شما با موفقیت منتشر شد');

@@ -8,6 +8,7 @@ use App\Http\Controllers\User\EditUserController;
 use App\Http\Controllers\User\LoginUserController;
 use App\Http\Controllers\User\LogoutUserController;
 use App\Http\Controllers\User\RegisterUserController;
+use App\Http\Controllers\user\UserPostsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[MainPageController::class,'showMainPage'])->name('main');
@@ -32,3 +33,4 @@ Route::post('/create-post',[CreatePostController::class,'createPost'])->name('cr
 Route::get('/delete-profile/{id}',[DeleteUserController::class,'showDeleteUser'])->name('show.delete-user');
 Route::delete('/delete-profile/{user}',[DeleteUserController::class,'deleteUser'])->name('delete-user');
 
+Route::get('/my-posts',[UserPostsController::class,'showUsersPosts'])->name('user.posts');

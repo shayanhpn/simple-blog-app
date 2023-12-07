@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.rtl.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/scss/tooltip.scss')}}">
     <script src="https://kit.fontawesome.com/add5785b56.js" crossorigin="anonymous"></script>
     <title>پن شاپ | یک بلاگ ساده از یک برنامه نویس</title>
 </head>
@@ -28,7 +29,7 @@
     <div class="container p-4">
         {{$slot}}
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
     <script src="{{asset('js/jquery-3.7.1.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
