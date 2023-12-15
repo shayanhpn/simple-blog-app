@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Blog\CreatePostController;
+use App\Http\Controllers\Blog\ViewPostController;
 use App\Http\Controllers\MainPageController;
 use App\Http\Controllers\User\AccountController;
 use App\Http\Controllers\User\DeleteUserController;
@@ -34,3 +35,5 @@ Route::get('/delete-profile/{id}',[DeleteUserController::class,'showDeleteUser']
 Route::delete('/delete-profile/{user}',[DeleteUserController::class,'deleteUser'])->name('delete-user');
 
 Route::get('/my-posts',[UserPostsController::class,'showUsersPosts'])->name('user.posts');
+
+Route::get('/post/{id}',[ViewPostController::class,'showSinglePost']);

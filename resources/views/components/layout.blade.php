@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/scss/tooltip.scss')}}">
     <script src="https://kit.fontawesome.com/add5785b56.js" crossorigin="anonymous"></script>
+    <script src="{{asset('assets/vendor/ckeditor5/build/ckeditor.js')}}"></script>
     <title>پن شاپ | یک بلاگ ساده از یک برنامه نویس</title>
 </head>
 <body class="bg-light">
@@ -34,5 +35,12 @@
     <script src="{{asset('js/jquery-3.7.1.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 </body>
 </html>

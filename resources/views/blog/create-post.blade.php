@@ -10,7 +10,7 @@
             <label for="">عنوان</label>
             <input type="text" class="form-control bg-light" name="title">
             <label for="">متن</label>
-            <textarea rows="10" type="text" class="form-control bg-light" name="body"></textarea>
+            <textarea name="body" id="editor" cols="30" rows="10"></textarea>
             <div class="row mt-4">
                 <div class="col-md-6">
                     <label for="">دسته بندی</label>

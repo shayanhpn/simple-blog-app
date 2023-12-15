@@ -21,9 +21,9 @@ class CreatePostController extends Controller
     {
         $postFields = $request->validate([
             'title' => ['required'],
-            'body' => [],
-            'post_image' => ['required'],
-            'tags' => ['required'],
+            'body' => ['nullable'],
+            'post_image' => ['nullable','image','mimes:jpg,png,webp,jpeg'],
+            'tags' => ['nullable'],
             'category' => ['required']
         ],[
             'title.required' => 'لطفا عنوان را وارد کنید',

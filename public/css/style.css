@@ -55,6 +55,9 @@ input{
 .swal2-popup{
     height: 300px;
 }
-textarea{
-    resize: none;
+/*Textbox*/
+.ck-editor__editable {
+    min-height: 400px;
+    max-height: 400px;
 }
+
